@@ -1,0 +1,11 @@
+Fundo principal	gray-900	bg-gray-900
+Fundo secundário	gray-800	bg-gray-800
+
+Texto primário	gray-100	text-gray-100
+
+Destaque 1	rose-500	text-rose-500 ou bg-rose-500
+Destaque 2	fuchsia-600	text-fuchsia-600\
+
+Botão principal	rose-600 hover:rose-700	bg-rose-600 hover:bg-rose-700
+
+Borda ou detalhes	gray-700	border-gray-700

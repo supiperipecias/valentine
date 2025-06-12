@@ -1,0 +1,34 @@
+<div class="flex items-center justify-center pt-64">
+  <div class="text-center">
+    <h1 class="text-2xl md:text-3xl font-bold text-rose-400 mb-6">Aceita passar o resto da sua vida comigo?</h1>
+
+    <div class="flex justify-center gap-4">
+      <!-- Botão SIM -->
+      <button
+        class="px-6 py-3 rounded-lg text-white font-semibold shadow-md transition-transform duration-300 bg-rose-600 hover:bg-rose-700 hover:scale-110"
+        (click)="mostrarPopup()"
+      >
+        Sim 💖
+      </button>
+
+      <!-- Botão NÃO desativado -->
+      <button
+        class="px-6 py-3 rounded-lg text-gray-100 font-semibold shadow-md bg-gray-600 cursor-not-allowed opacity-60"
+        disabled
+      >
+        Não 😭
+      </button>
+    </div>
+  </div>
+
+  <!-- Popup -->
+<div *ngIf="popupAberto" class="fixed inset-0 bg-gray-900 bg-opacity-70 flex items-center justify-center z-50">
+  <div class="popup-box bg-gray-600 rounded-xl p-8 text-center w-3xl shadow-xl">
+    <h2 class="text-2xl font-bold text-rose-400 mb-4">Oi Amoooooooooor!</h2>
+    <p class="text-gray-100  font-semibold mb-4">Oi amor, você sabe que eu sou péssimo com palavras, provavelmente isso daqui ta cheio de erro, mas eu n queria que hoje acabasse sem algo especial, esse é o nosso segundo dia dos namorados juntos (se bem que ano passado a gente nem se tocou kkkk) e eu queria deixar claro o quão especial você é pra mim, sei que é um presente besta, mas eu me esforcei (juro).</p>
+    <p class="text-rose-400 text-3xl font-bold mb-4">Eu te amo, Isabelle, quero casar com você.</p>
+    <button (click)="fecharPopup()" class="mt-2 px-4 py-2 bg-rose-600 text-white rounded hover:bg-rose-700">
+      Fechar
+    </button>
+  </div>
+</div>
